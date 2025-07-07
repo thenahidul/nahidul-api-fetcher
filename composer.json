@@ -1,0 +1,43 @@
+{
+	"name": "thenahidul/nahidul-api-fetcher",
+	"version": "1.0.0",
+	"description": "Fetches data from a remote API and displays it via AJAX, a Gutenberg block, an includes/admin page, and WP-CLI.",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"homepage": "https://github.com/thenahidul/nahidul-api-fetcher",
+	"authors": [
+		{
+			"name": "Nahidul",
+			"email": "nahiddhaka07@gmail.com"
+		}
+	],
+	"scripts": {
+		"phpcs": "@php ./vendor/bin/phpcs",
+		"phpcs:fix": "@php ./vendor/bin/phpcbf",
+		"run-tests": [
+			"@phpcs:fix",
+			"@phpcs"
+		]
+	},
+
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
+		"wp-coding-standards/wpcs": "^3.0",
+		"phpcompatibility/phpcompatibility-wp": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Nahidul\\ApiFetcher\\": "includes/"
+		},
+		"files": [
+			"includes/helpers.php"
+		]
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}

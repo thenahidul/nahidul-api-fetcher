@@ -1,0 +1,54 @@
+.wp-block-nahidul-api-fetcher-api-fetcher {
+	table {
+		width: 100%;
+		margin-block: 25px;
+		border: 1px solid #c3c4c7;
+		border-spacing: 0;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+		background: #fff;
+		clear: both;
+
+		thead,
+		tfoot {
+			th,
+			td {
+				color: #2c3338;
+				font-weight: 400;
+				text-align: left;
+				font-size: 14px;
+				line-height: 1.3em;
+				padding: 10px;
+				border: none; // remove all column borders
+			}
+		}
+
+		thead {
+			th,
+			td {
+				border-bottom: 1px solid #c3c4c7;
+				line-height: 1.4em;
+				padding-block: 12px;
+			}
+		}
+
+		tbody {
+			tr:nth-child(odd) {
+				background-color: #f6f7f7;
+			}
+
+			td {
+				color: #50575e;
+				vertical-align: top;
+				padding: 10px;
+				border: none;
+
+				p,
+				ol,
+				ul {
+					font-size: 13px;
+					line-height: 1.5em;
+				}
+			}
+		}
+	}
+}

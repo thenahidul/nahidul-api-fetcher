@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "nahidul-api-fetcher/api-fetcher",
+	"version": "0.1.0",
+	"title": "Nahidul API Fetcher",
+	"category": "widgets",
+	"icon": "database",
+	"description": "Fetches data from a remote API and displays it in a table",
+	"keywords": [ "nahid", "md" ],
+	"example": {},
+	"attributes": {
+		"data": {
+			"type": "object"
+		},
+		"columns": {
+			"type": "array",
+			"default": [ "id", "fname", "lname", "email", "date" ]
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "nahidul-api-fetcher",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

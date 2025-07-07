@@ -1,0 +1,206 @@
+# Copyright (C) 2025 TheNahidul
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Nahidul API Fetcher 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nahidul-api-fetcher\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-07-07T18:25:26+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: nahidul-api-fetcher\n"
+
+#. Plugin Name of the plugin
+#: nahidul-api-fetcher.php
+#: includes/Admin/Menu.php:40
+#: includes/Admin/Menu.php:78
+#: includes/Admin/Menu.php:79
+msgid "Nahidul API Fetcher"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: nahidul-api-fetcher.php
+msgid "https://github.com/thenahidul/nahidul-api-fetcher"
+msgstr ""
+
+#. Description of the plugin
+#: nahidul-api-fetcher.php
+msgid "Fetches data from a remote API and displays it via AJAX, a Gutenberg block, an admin page, and WP-CLI."
+msgstr ""
+
+#. Author of the plugin
+#: nahidul-api-fetcher.php
+msgid "TheNahidul"
+msgstr ""
+
+#. Author URI of the plugin
+#: nahidul-api-fetcher.php
+msgid "https://www.linkedin.com/in/thenahidul/"
+msgstr ""
+
+#: includes/Admin/Ajax.php:45
+msgid "You do not have sufficient permissions to perform this action."
+msgstr ""
+
+#: includes/Admin/Menu.php:57
+msgid "Made with ♥ by TheNahidul"
+msgstr ""
+
+#: includes/Admin/Menu.php:60
+msgid "LinkedIn"
+msgstr ""
+
+#: includes/Admin/Menu.php:63
+msgid "GitHub"
+msgstr ""
+
+#: includes/Admin/Menu.php:66
+msgid "WP"
+msgstr ""
+
+#: includes/Admin/Menu.php:106
+msgid "Refresh Table"
+msgstr ""
+
+#: includes/Api/Client.php:75
+msgid "Failed to retrieve or store data."
+msgstr ""
+
+#: includes/CLI/Commands.php:42
+msgid "Nahidul API Fetcher Plugin Info"
+msgstr ""
+
+#: includes/CLI/Commands.php:51
+msgid "Name: "
+msgstr ""
+
+#: includes/CLI/Commands.php:52
+msgid "Version: "
+msgstr ""
+
+#: includes/CLI/Commands.php:53
+msgid "Author: "
+msgstr ""
+
+#: includes/CLI/Commands.php:54
+msgid "Plugin URI: "
+msgstr ""
+
+#: includes/CLI/Commands.php:55
+msgid "Description: "
+msgstr ""
+
+#: includes/CLI/Commands.php:105
+msgid "Forcing data refresh..."
+msgstr ""
+
+#: includes/CLI/Commands.php:107
+msgid "Fetching cached data (if available)..."
+msgstr ""
+
+#: includes/CLI/Commands.php:119
+msgid "No data found to display."
+msgstr ""
+
+#: includes/CLI/Commands.php:157
+msgid "Data retrieved successfully."
+msgstr ""
+
+#: includes/Traits/Singleton.php:47
+msgid "Cloning is not allowed."
+msgstr ""
+
+#: includes/Traits/Singleton.php:57
+msgid "Un-serializing is not allowed."
+msgstr ""
+
+#: nahidul-api-fetcher.php:40
+#, php-format
+msgid "Nahidul API Fetcher: Please run %s to generate the autoloader."
+msgstr ""
+
+#: templates/table.php:39
+msgid "No valid data found!"
+msgstr ""
+
+#: build/blocks/api-fetcher/index.js:52
+#: src/blocks/api-fetcher/edit.jsx:13
+#: build/blocks/api-fetcher/index.js:13
+msgid "Show ID"
+msgstr ""
+
+#: build/blocks/api-fetcher/index.js:55
+#: src/blocks/api-fetcher/edit.jsx:14
+#: build/blocks/api-fetcher/index.js:14
+msgid "Show First Name"
+msgstr ""
+
+#: build/blocks/api-fetcher/index.js:58
+#: src/blocks/api-fetcher/edit.jsx:15
+#: build/blocks/api-fetcher/index.js:15
+msgid "Show Last Name"
+msgstr ""
+
+#: build/blocks/api-fetcher/index.js:61
+#: src/blocks/api-fetcher/edit.jsx:16
+#: build/blocks/api-fetcher/index.js:16
+msgid "Show Email"
+msgstr ""
+
+#: build/blocks/api-fetcher/index.js:64
+#: src/blocks/api-fetcher/edit.jsx:17
+#: build/blocks/api-fetcher/index.js:17
+msgid "Show Date"
+msgstr ""
+
+#: build/blocks/api-fetcher/index.js:87
+#: src/blocks/api-fetcher/edit.jsx:36
+#: build/blocks/api-fetcher/index.js:36
+msgid "Data refreshed successfully."
+msgstr ""
+
+#: build/blocks/api-fetcher/index.js:89
+#: src/blocks/api-fetcher/edit.jsx:38
+#: build/blocks/api-fetcher/index.js:38
+msgid "Data refresh failed."
+msgstr ""
+
+#: build/blocks/api-fetcher/index.js:135
+#: src/blocks/api-fetcher/edit.jsx:88
+#: build/blocks/api-fetcher/index.js:88
+msgid "Settings"
+msgstr ""
+
+#: build/blocks/api-fetcher/index.js:147
+#: src/blocks/api-fetcher/edit.jsx:102
+#: build/blocks/api-fetcher/index.js:102
+msgid "Refresh"
+msgstr ""
+
+#: build/blocks/api-fetcher/block.json
+#: src/blocks/api-fetcher/block.json
+msgctxt "block title"
+msgid "Nahidul API Fetcher"
+msgstr ""
+
+#: build/blocks/api-fetcher/block.json
+#: src/blocks/api-fetcher/block.json
+msgctxt "block description"
+msgid "Fetches data from a remote API and displays it in a table"
+msgstr ""
+
+#: build/blocks/api-fetcher/block.json
+#: src/blocks/api-fetcher/block.json
+msgctxt "block keyword"
+msgid "nahid"
+msgstr ""
+
+#: build/blocks/api-fetcher/block.json
+#: src/blocks/api-fetcher/block.json
+msgctxt "block keyword"
+msgid "md"
+msgstr ""

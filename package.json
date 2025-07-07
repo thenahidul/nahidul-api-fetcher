@@ -1,0 +1,24 @@
+{
+	"name": "nahidul-api-fetcher",
+	"version": "1.0.0",
+	"description": "Fetch remote data and show it via Gutenberg block, admin menu, and WP-CLI.",
+	"main": "index.js",
+	"scripts": {
+		"start": "wp-scripts start --webpack-copy-php",
+		"build": "wp-scripts build --webpack-copy-php"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/thenahidul/nahidul-api-fetcher.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/thenahidul/nahidul-api-fetcher/issues"
+	},
+	"homepage": "https://github.com/thenahidul/nahidul-api-fetcher#readme",
+	"devDependencies": {
+		"@wordpress/scripts": "^30.19.0"
+	}
+}

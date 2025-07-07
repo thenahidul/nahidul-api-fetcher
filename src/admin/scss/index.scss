@@ -1,0 +1,111 @@
+@use './variables' as *;
+@use 'sass:color';
+@use 'utils';
+
+#wpcontent {
+	padding-left: 0;
+
+	h1,
+	h2,
+	h3 {
+		font-weight: 600;
+		color: #2c3337;
+	}
+
+	h1 {
+		margin-block: 15px;
+	}
+
+	h2 {
+		font-size: 24px;
+		text-transform: capitalize;
+	}
+
+	#wpbody {
+		background-color: #fff;
+		padding-inline: 20px;
+	}
+
+	.naf {
+		&-wrapper {
+			max-width: 800px;
+		}
+
+		&__header {
+			border-top: 3px solid $primary-color;
+			padding: 20px;
+		}
+
+		&__logo {
+			width: 200px;
+			max-width: 100%;
+			height: auto;
+		}
+
+		&__table {
+			&-container {
+				position: relative;
+
+				&.is-loading:after {
+					content: '';
+					border: 5px solid color.adjust($primary-color, $lightness: 25%);
+					border-top: 5px solid $primary-color;
+					border-radius: 50%;
+					width: 35px;
+					height: 35px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					animation: spin 1s linear infinite;
+				}
+			}
+		}
+
+		&-spinner {
+			float: none;
+			margin-inline-end: 5px;
+		}
+
+		&__button {
+			color: #fff;
+			font-size: 14px;
+			font-weight: 500;
+			padding: 10px 15px;
+			min-height: 36px;
+			line-height: 1;
+			background-color: #738e9e;
+			border: 1px solid #738e9e;
+
+			&:hover {
+				background-color: #395360;
+				border-color: #395360;
+			}
+		}
+	}
+}
+
+#wpfooter {
+	.naf__footer {
+		text-align: center;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: normal;
+		background-color: #f0f0f1;
+		color: #646970;
+		padding: 30px 0;
+		margin-bottom: 20px;
+
+		&-links {
+			gap: 8px;
+
+			a:hover {
+				color: color.adjust(#2271b1, $lightness: -20%);
+			}
+		}
+	}
+}
+
+@keyframes spin {
+	0% { transform: translate(-50%, -50%) rotate(0deg); }
+	100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
