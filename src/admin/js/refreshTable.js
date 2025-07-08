@@ -11,10 +11,9 @@ export async function refreshTable( refreshBtn ) {
 	}
 
 	const tableContainer = refreshBtn.closest( '.js-naf-table-container' );
-	const spinner = tableContainer?.querySelector( '.js-naf-spinner' );
 
-	if ( ! tableContainer || ! spinner ) {
-		console.error( 'Missing table container or spinner.' );
+	if ( ! tableContainer ) {
+		console.error( 'Missing table container.' );
 		showAdminNotice( 'Refreshing failed.', 'error' );
 		return;
 	}
@@ -28,7 +27,6 @@ export async function refreshTable( refreshBtn ) {
 	}
 
 	refreshBtn.disabled = true;
-	spinner.classList.add( 'is-active' );
 	tableContainer.classList.add( 'is-loading' );
 
 	try {
@@ -62,7 +60,6 @@ export async function refreshTable( refreshBtn ) {
 		showAdminNotice( 'Refreshing failed.', 'error' );
 	} finally {
 		refreshBtn.disabled = false;
-		spinner.classList.remove( 'is-active' );
 		tableContainer.classList.remove( 'is-loading' );
 	}
 }

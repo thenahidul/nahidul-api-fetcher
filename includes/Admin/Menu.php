@@ -101,7 +101,6 @@ class Menu {
 					<div class="naf__table-container js-naf-table-container">
 						<?php nahidul_api_fetcher_template_part( '', 'table', array( 'data' => $data ) ); ?>
 						<p class="flex items-center justify-self-end">
-							<span class="spinner naf-spinner js-naf-spinner"></span>
 							<button class="button button-primary naf__button js-naf-table-refresh-handler">
 								<?php esc_html_e( 'Refresh Table', 'nahidul-api-fetcher' ); ?>
 							</button>

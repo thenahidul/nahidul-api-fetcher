@@ -6,10 +6,13 @@ import { refreshTable } from './refreshTable';
  * which triggers an AJAX table refresh.
  */
 document.addEventListener( 'DOMContentLoaded', () => {
-	document.querySelectorAll( '.js-naf-table-refresh-handler' ).forEach( ( refreshBtn ) => {
-		refreshBtn.addEventListener( 'click', ( e ) => {
-			e.preventDefault();
-			refreshTable( refreshBtn );
+	const refreshBtns = document.querySelectorAll( '.js-naf-table-refresh-handler' );
+	if ( refreshBtns.length ) {
+		refreshBtns.forEach( ( refreshBtn ) => {
+			refreshBtn.addEventListener( 'click', ( e ) => {
+				e.preventDefault();
+				refreshTable( refreshBtn );
+			} );
 		} );
-	} );
+	}
 } );
