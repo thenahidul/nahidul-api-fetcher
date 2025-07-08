@@ -13,7 +13,6 @@ export async function refreshTable( refreshBtn ) {
 	const tableContainer = refreshBtn.closest( '.js-naf-table-container' );
 	const spinner = tableContainer?.querySelector( '.js-naf-spinner' );
 
-	console.log(tableContainer)
 	if ( ! tableContainer || ! spinner ) {
 		console.error( 'Missing table container or spinner.' );
 		showAdminNotice( 'Refreshing failed.', 'error' );
