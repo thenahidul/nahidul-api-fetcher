@@ -56,15 +56,20 @@ Fetches data from a remote API and displays it via AJAX, a Gutenberg block, an a
 ## REST Endpoint
 
 The plugin creates a public REST API endpoint accessible at:
+
 `/wp-json/nahidul-api-fetcher/v1/data/`
+
 `/wp-json/nahidul-api-fetcher/v1/data/?refresh=true`
 
 ## WP CLI Command
 
 Get data
 `wp nahidul-api-fetcher data`
+
 `wp nahidul-api-fetcher data --force` // Clear cached data and get new ones
+
 `wp nahidul-api-fetcher data --show_col=name,date` // Show specific columns
+
 `wp nahidul-api-fetcher data --show_col=name,date` // Hide specific columns
 
 # Development
